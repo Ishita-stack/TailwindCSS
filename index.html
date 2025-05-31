@@ -4,8 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TailwindCSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="mt-20 mx-54 flex flex-wrap rounded-lg border-3">
+      <!-- Quote Container -->
+      <div
+        class="w-full h-20 bg-linear-to-r from-cyan-500 to-blue-500 text-white flex justify-center items-center text-2xl font-bold border-x-2 rounded-t-lg"
+      >
+        News you can trust.
+      </div>
+      <!-- Content Container -->
+      <div class="w-full mt-6 text-center justify-center items-center">
+        <h3 class="font-bold">Stay up to date with latest!</h3>
+        <p>
+          Subscribe to our newsletter for the latest news straight into your
+          inbox.
+        </p>
+        <form class="flex flex-wrap justify-center items-center">
+          <input
+            type="text"
+            placeholder="your@email.com"
+            class="w-full mx-52 bg-slate-200 text-center placeholder:text-sm my-4 py-2"
+          />
+          <button
+            type="submit"
+            value="submit"
+            class="w-full bg-blue-500 text-white mx-52 my-4 py-2 rounded-full"
+          >
+            Subscribe Now
+          </button>
+          <!-- <input
+            type="email"
+            placeholder="Enter your email"
+            class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          /> -->
+          <!-- <button
+            type="submit"
+            class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition duration-200"
+          > 
+            Subscribe
+          </button>-->
+        </form>
+        <p class="my-6 text-sm">We value your privacy.</p>
+      </div>
+    </div>
   </body>
 </html>
